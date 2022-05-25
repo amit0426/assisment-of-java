@@ -1,0 +1,13 @@
+package com.masai;
+
+public class Student {
+	
+	
+
+}
+
+class DayScholar extends Student{
+	
+}
+
+class 

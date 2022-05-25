@@ -1,0 +1,102 @@
+package com.masai;
+
+class Main{
+	
+	 
+}
+
+public class Memer {
+	String Name;
+	int Age;
+	String Phone_number;
+	String Adress;
+	double Salary;
+	
+//	public  Memer(String string, int i, int j, String string2, int k) {
+//		super();
+//		
+//	}
+	
+public Memer() {
+		// TODO Auto-generated constructor stub
+	
+	
+	super();
+	}
+
+public static void main(String[] args) {
+	 
+	 Memer m = new Memer();
+	  System.out.println();
+	 m.setAge(20);
+	 m.setName("Amit Kumar");
+	 m.setSalary(100000);
+	 
+//	 System.out.println(m.getAdress());
+	 System.out.println(m.getSalary());
+	 
+
+	
+}
+//	setter**************************************************************
+	public void setAdress(String adress) {
+		Adress = adress;
+	}
+	public void setAge(int age) {
+		Age = age;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	
+	public void setPhone_number(String phone_number) {
+		Phone_number = phone_number;
+	}
+	public void setSalary(double salary) {
+		Salary = salary;
+	}
+	
+//	getter method**************************************************************
+	public String getAdress() {
+		return Adress;
+	}
+	public int getAge() {
+		return Age;
+	}
+	public String getName() {
+		return Name;
+	}
+	public String getPhone_number() {
+		return Phone_number;
+	}
+	public double getSalary() {
+		return Salary;
+	}
+	
+	
+	
+
+	
+	
+	
+    double printSalary() {
+	return this.Salary;
+    }
+
+	
+	
+}
+
+ class Employee extends Memer{
+	 
+	 String Specialisation;
+	 String Department;
+	
+	 public Employee(String string, int i, int j, String string2, int k) {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	 
+}
+

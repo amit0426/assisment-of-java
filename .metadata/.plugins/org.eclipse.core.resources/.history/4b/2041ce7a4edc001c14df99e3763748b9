@@ -1,0 +1,100 @@
+package com.masai;
+
+public class Demo {
+	
+	public static void getBank(String Bank)
+	{
+		if(Bank == "axis")
+		{
+			AxisBank a = new AxisBank("Axis", "AXI569");
+			a.displayDetails();
+			a.getCreditCard();
+		}
+		if(Bank =="icici")
+		{
+			ICICIBank i = new ICICIBank("ICICI", "ICI5678");
+			i.displayDetails();
+		
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		getBank("axis");
+		
+	}
+	
+
+}
+
+
+
+
+
+class Bank{
+	String branchName;
+  String ifscCode;
+  
+  Bank(String branchName,String ifscCode){
+	  this.branchName= branchName;
+	  this.ifscCode = ifscCode;
+	  
+	  
+	  
+	  
+  }
+  
+  void displayDetails() {
+	  
+	  System.out.println("Branch Name :"+ branchName);
+	  System.out.println("Ifsc Code :"+ ifscCode);
+	  
+  }
+}
+
+
+
+class AxisBank extends Bank{
+	
+	double rateOfinterest;
+	
+
+	AxisBank(String branchName, String ifscCode) {
+		super(branchName, ifscCode);
+		// TODO Auto-generated constructor stub
+	}
+	
+	@Override
+	void displayDetails() {
+		// TODO Auto-generated method stub
+		super.displayDetails();
+		System.out.println(rateOfinterest);
+	}
+	
+	void getCreditCard() {
+		System.out.println("Get the Credit Card from the Axis bank");
+	}
+}
+
+class ICICIBank extends Bank{
+	
+ double	rateOfinterest;
+
+	ICICIBank(String branchName, String ifscCode) {
+		super(branchName, ifscCode);
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	void displayDetails() {
+		// TODO Auto-generated method stub
+		super.displayDetails();
+		System.out.println(rateOfinterest);
+	}
+	
+}
+
+
+
+
+

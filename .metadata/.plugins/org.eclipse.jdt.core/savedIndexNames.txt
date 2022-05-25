@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+F:\java_practice\inheritance assisment\.metadata\.plugins\org.eclipse.jdt.core
+1658264207.index
+2186899505.index
+1865797976.index
+3746343814.index
